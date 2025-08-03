@@ -54,10 +54,10 @@ login-avaliacao-java/
 
 ## 📊 Acesso ao Relatório de Cobertura (JaCoCo)
 
-Após rodar os testes com Maven, o JaCoCo cria um relatório em:
+Após rodar os testes com Maven, o JaCoCo cria um relatório em target/site/jacoco/index.html
+com acesso em:
 
-target/site/jacoco/index.html
-
+[Aqui](https://rodolfooliveira-professor.github.io/pratica-java-jacoco/)
 ---
 
 ### 💡 Dica
