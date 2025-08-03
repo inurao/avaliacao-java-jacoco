@@ -12,8 +12,19 @@ public class LoginServiceTest {
         assertTrue(login.autenticar("admin", "1234"));
     }
 
-    // TODO: Testes que o aluno deve implementar:
-    // testLoginIncorreto
-    // testUsuarioNulo
-    // testSenhaNula
+    @Test
+    public void testLoginIncorreto() {
+        assertFalse(login.autenticar("admin", "senhaErrada"));
+        assertFalse(login.autenticar("usuarioInvalido", "1234"));
+    }
+
+    @Test
+    public void testUsuarioNulo() {
+        assertFalse(login.autenticar(null, "1234"));
+    }
+
+    @Test
+    public void testSenhaNula() {
+        assertFalse(login.autenticar("admin", null));
+    }
 }
